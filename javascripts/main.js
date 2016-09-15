@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $('body').scrollspy({ target: "#myNav", offset: 50 });
-  // $('.navbar').css('bottom', $('#home').offset().top + $('#home').outerHeight(true) - 50 + 'px');
 })
 
 $('nav a').on('click', function(e) {
@@ -8,19 +7,24 @@ $('nav a').on('click', function(e) {
   var targetID = e.currentTarget.id + "Section";
 
   $('body').animate({
-    scrollTop: $('#' + targetID).position().top - 50
+    scrollTop: $('#' + targetID).position().top + 1
   }, 500)
 })
 
-var num = $('#aboutSection').offset().top - 50; //number of pixels before modifying styles
+var num = $('#aboutSection').offset().top - 50; //number of pixels before fixing nav bar to top
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() >= num) {
         $('#myNav').removeClass('navbar-fixed-bottom');
         $('#myNav').addClass('navbar-fixed-top');
+        $('#aboutSection').css('margin-top', '50px');
+        console.log($('#aboutSection').offset().top);
+
     } 
     else {
          $('#myNav').removeClass('navbar-fixed-top');
          $('#myNav').addClass('navbar-fixed-bottom');
+         $('#aboutSection').css('margin-top', '0px');
+         console.log($('#aboutSection').offset().top);
     }
 });
