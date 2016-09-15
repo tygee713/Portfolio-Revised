@@ -1,16 +1,32 @@
 $(document).ready(function() {
-  $('body').scrollspy({ target: "#myNav", offset: 50 });
   var homeheight = $(window).height();
   $('#home').css('height', homeheight - 50 + 'px');
+  $('body').scrollspy({ target: "#myNav", offset: 50 });
 })
 
 $('nav a').on('click', function(e) {
   e.preventDefault();
   var targetID = e.currentTarget.id + "Section";
 
-  $('body').animate({
-    scrollTop: $('#' + targetID).position().top + 1
-  }, 500)
+//if statements fix issue where animation would go too far in the about section due to the navbar height
+  if (targetID == "aboutSection") {
+    if ($(window).scrollTop() > $('#aboutSection').offset().top) {
+      $('body').animate({
+        scrollTop: $('#' + targetID).position().top + .01
+      }, 500)
+    }
+    else
+    {
+      $('body').animate({
+        scrollTop: $('#' + targetID).position().top - 50
+      }, 500)
+    }
+  }
+  else {
+    $('body').animate({
+      scrollTop: $('#' + targetID).position().top + .01
+    }, 500)
+  }
 })
 
 $(window).bind('scroll', function () {
