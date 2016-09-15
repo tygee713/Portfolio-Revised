@@ -1,0 +1,58 @@
+/* Creates sticky nav bar */
+.navbar {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.navbar-fixed-bottom {
+  position: relative;
+}
+
+#myName {
+  font-size: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#myTitle {
+  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#myInfo {
+  line-height: 25px;
+  font-size: 18px;
+}
+
+#home {
+  height: 92vh;
+  background-image: url(../images/hiking.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+#aboutSection {
+  height: 100vh;
+  background-color: lightgrey;
+  padding-top: 50px;
+}
+
+#projectsSection {
+  height: 100vh;
+  background-color: salmon;
+}
+
+#contactSection {
+  height: 100vh;
+  background-color: lightgrey;
+}
+
+.content {
+  padding-left: 33%;
+  padding-right: 33%;
+}
+
+/*  */
