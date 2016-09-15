@@ -28,7 +28,7 @@
 }
 
 #home {
-  height: 92vh;
+ /* height: calc(100% - 50px);*/
   background-image: url(../images/hiking.jpg);
   background-size: cover;
   background-position: top center;
