@@ -8,7 +8,7 @@ $('nav a').on('click', function(e) {
   e.preventDefault();
   var targetID = e.currentTarget.id + "Section";
 
-//if statements fix issue where animation would go too far in the about section due to the navbar height
+//Fixes issue where animation would go too far in the about section due to the navbar height
   if (targetID == "aboutSection") {
     if ($(window).scrollTop() > $('#aboutSection').offset().top) {
       $('body').animate({
@@ -30,8 +30,10 @@ $('nav a').on('click', function(e) {
 })
 
 $(window).bind('scroll', function () {
-  var num = $('#aboutSection').offset().top - 50; //number of pixels before fixing nav bar to top
-    if ($(window).scrollTop() >= num) {
+  var numPixels = $('#aboutSection').offset().top - 50; //number of pixels before fixing nav bar to top
+
+    //Makes the navbar sticky after scrolling past the landing page
+    if ($(window).scrollTop() >= numPixels) {
         $('#myNav').removeClass('navbar-fixed-bottom');
         $('#myNav').addClass('navbar-fixed-top');
         $('#aboutSection').css('margin-top', '50px');
@@ -41,4 +43,13 @@ $(window).bind('scroll', function () {
          $('#myNav').addClass('navbar-fixed-bottom');
          $('#aboutSection').css('margin-top', '0px');
     }
+
+    //Causes parallax scrolling on the name in the landing page
+    $("#name").css({
+      'transform' : 'translate(0px, ' + ($(this).scrollTop())/2 + '%)'
+    });
+
+    //Fades the name in/out on the landing page when you scroll past it
+    var fadeStartPoint = $('#name').offset().top;
+    $('#name').css({'opacity':( fadeStartPoint -$(window).scrollTop() )/100});
 });
