@@ -20,7 +20,7 @@ body {
   margin-top: 40vh;
   color: lightgrey;
   font-weight: bold;
-  text-shadow: 0.5px 0.5px 0px black;
+  text-shadow: 0.5px 0.5px 1px black;
   font-family: 'Monserrat', sans-serif;
 }
 
@@ -32,7 +32,7 @@ body {
   color: lightgrey;
   font-weight: bold;
   font-family: 'Monserrat', sans-serif;
-  text-shadow: 0.5px 0.5px 0px black;
+  text-shadow: 0.5px 0.5px 1px black;
 }
 
 #myInfo {
