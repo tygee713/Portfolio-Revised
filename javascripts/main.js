@@ -50,6 +50,6 @@ $(window).bind('scroll', function () {
     });
 
     //Fades the name in/out on the landing page when you scroll past it
-    var fadeStartPoint = $('#name').offset().top;
+    var fadeStartPoint = $('#name').offset().top - 70;
     $('#name').css({'opacity':( fadeStartPoint -$(window).scrollTop() )/100});
 });
