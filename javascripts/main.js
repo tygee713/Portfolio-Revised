@@ -33,6 +33,10 @@ $('nav a').on('click', function(e) {
 $(window).bind('scroll', function () {
   var numPixels = $('#aboutSection').offset().top - 50; //number of pixels before fixing nav bar to top
 
+  $('#about').blur();
+  $('#projects').blur();
+  $('#contact').blur();
+
     //Makes the navbar sticky after scrolling past the landing page
     if ($(window).scrollTop() >= numPixels) {
         $('#myNav').removeClass('navbar-fixed-bottom');
