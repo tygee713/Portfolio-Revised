@@ -53,3 +53,11 @@ $(window).bind('scroll', function () {
     var fadeStartPoint = $('#name').offset().top - 70;
     $('#name').css({'opacity':( fadeStartPoint -$(window).scrollTop() )/100});
 });
+
+$(".projectPreview").hover(function() {
+      $(this).find(".img-caption").fadeIn();
+      $(this).find('img').fadeTo(400, 0.5);
+    }, function() {
+      $(this).find(".img-caption").fadeOut();
+      $(this).find('img').fadeTo(400, 1);
+  });

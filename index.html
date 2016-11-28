@@ -2,44 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Scrolling Nav</title>
+  <title>Tyler Geerdts Portfolio</title>
   <link rel="stylesheet" type="text/css" href="./stylesheets/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/afef3d6e6c.js"></script>
   <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 </head>
 <body>
 
  
 <div id="home" class="container-fluid">
   <div id="name">
-  <h1 id="myName">Tyler Geerdts</h1>
-  <h2 id="myTitle">Web Developer</h2>
+  <h1 id="myName">TYLER GEERDTS</h1>
+  <h2 id="myTitle">WEB DEVELOPER</h2>
   </div>
 </div>
     <nav id = "myNav" class = "navbar navbar-inverse navbar-fixed-bottom">
       <div class = "container-fluid" id="myNav">
         <ul class = "nav navbar-nav">
-          <li><a href = "#aboutSection" id="about">About</a></li>
-          <li><a href = "#projectsSection" id="projects">Projects</a></li>
-          <li><a href = "#contactSection" id="contact">Contact</a></li>
+          <li><a href = "#aboutSection" id="about">ABOUT</a></li>
+          <li><a href = "#projectsSection" id="projects">PORTFOLIO</a></li>
+          <li><a href = "#contactSection" id="contact">CONTACT</a></li>
         </ul>
       </div>
     </nav>
 
+
  <div id="aboutSection" class="container-fluid content">
-    <p id="myInfo">Hey there!  I&#8217;m Tyler, a full-stack web developer based in the tri-state area.  I&#8217;m currently enrolled in the Rutgers Coding Bootcamp, making user-friendly front-end designs and fully-functional web applications.  I'm available for hire on a part-time basis.</p>
+    <h2 id="infoHeader">Hey there!  I&#8217;m <b>Tyler</b>, a <b>full-stack web developer</b> based in the tri-state area.</h2>
+    <p id="myInfo">My passion for programming spans from front-end user experience to back-end database design and everything in between.  I&#8217;m a problem solver and analytical thinker, with an emphasis on pseudo-coding and wireframing.  I'm currently available for hire on a full-time, part-time or freelance basis.</p>
+    <div id="skillsSection">
+      <h2 class="sectionHeader">SKILLS</h2>
+      <div id="iconRow1">
+        <i class="devicon-javascript-plain"></i>
+        <i class="devicon-html5-plain-wordmark colored"></i>
+        <i class="devicon-css3-plain-wordmark colored"></i>
+        <i class="devicon-mysql-plain-wordmark colored"></i>
+        <i class="devicon-jquery-plain-wordmark colored"></i>
+      </div>
+      
+      <div id="iconRow2">
+        <i class="devicon-nodejs-plain-wordmark"></i>
+        <i class="devicon-bootstrap-plain-wordmark colored"></i>
+        <i class="devicon-git-plain-wordmark colored"></i>
+        <i class="devicon-heroku-plain-wordmark colored"></i>
+        <i class="devicon-trello-plain-wordmark colored"></i>
+      </div>
+    </div>
   </div>
 
 
-  <div id="projectsSection" class="container-fluid content">
+  <div id="projectsSection" class="container-fluid">
+    <h2 class="sectionHeader">MY PROJECTS</h2>
 
+    <div class="row projectRow">
+      <div class = "col-sm-6 col-md-6 project">
+        <div class = "img-thumb img-center projectPreview">
+          <img class = "img-responsive img-center screenshot" src = "./images/streetfighter.jpg">
+          <div class = "img-caption">
+            <h3 class = "text-center projectTitle">STREET FIGHTER RPG</h3>
+            <span class="projectSummary">Browser RPG game using Javascript opjects and JQuery to dynamically populate page elements.</span>
+            <div class = "links">
+                <a href = "https://github.com/tygee713/JQuery-RPG" target = "_blank">Github</a> | <a href="https://streetfighter-rpg.herokuapp.com" target = "_blank">Heroku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "col-sm-6 col-md-6 project">
+        <div class = "img-thumb img-center projectPreview">
+          <img class = "img-responsive img-center screenshot" src = "./images/streetfighter.jpg">
+          <div class = "img-caption">
+            <h3 class = "text-center projectTitle">STREET FIGHTER RPG</h3>
+            <span class="projectSummary">Browser RPG game using Javascript opjects and JQuery to dynamically populate page elements.</span>
+            <div class = "links">
+              <a href = "https://github.com/tygee713/JQuery-RPG" target = "_blank">Github</a> | <a href="https://streetfighter-rpg.herokuapp.com" target = "_blank">Heroku</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row projectRow">
+      <div class = "col-sm-6 col-md-6 project">
+        <div class = "img-thumb img-center projectPreview">
+          <img class = "img-responsive img-center screenshot" src = "./images/streetfighter.jpg">
+          <div class = "img-caption">
+            <h3 class = "text-center projectTitle">STREET FIGHTER RPG</h3>
+            <span class="projectSummary">Browser RPG game using Javascript opjects and JQuery to dynamically populate page elements.</span>
+            <div class = "links">
+                <a href = "https://github.com/tygee713/JQuery-RPG" target = "_blank">Github</a> | <a href="https://streetfighter-rpg.herokuapp.com" target = "_blank">Heroku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "col-sm-6 col-md-6 project">
+        <div class = "img-thumb img-center projectPreview">
+          <img class = "img-responsive img-center screenshot" src = "./images/streetfighter.jpg">
+          <div class = "img-caption">
+            <h3 class = "text-center projectTitle">STREET FIGHTER RPG</h3>
+            <span class="projectSummary">Browser RPG game using Javascript opjects and JQuery to dynamically populate page elements.</span>
+            <div class = "links">
+              <a href = "https://github.com/tygee713/JQuery-RPG" target = "_blank">Github</a> | <a href="https://streetfighter-rpg.herokuapp.com" target = "_blank">Heroku</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
   </div>
 
   <div id="contactSection" class="container-fluid content">
-
-
+    <h2 class="sectionHeader">CONTACT ME</h2>
+    <p id="myContact">Email me at tygee713@gmail.com, or reach out at any of the below:</p>
+    <div id = "contactIcons">
+      <a href="https://github.com/tygee713"><i class="fa fa-github fa-5x fa-border"></i></a>
+      <a href="https://www.linkedin.com/in/tyler-geerdts-240bb194"><i class="fa fa-linkedin-square fa-5x fa-border"></i></a>
+      <a href="https://twitter.com/tgeerdts"><i class="fa fa-twitter fa-5x fa-border"></i></a>
+    </div>
   </div>
 
 

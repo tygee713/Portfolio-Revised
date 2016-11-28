@@ -9,19 +9,23 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/*.nav li {
+  padding-left: 5px;
+  padding-right: 5px;
+}*/
 .navbar-fixed-bottom {
   position: relative;
 }
 
 #myName {
-  font-size: 62px;
+  font-size: 66px;
   margin-bottom: 0px;
   text-align: center;
   margin-top: 40vh;
   color: lightgrey;
   font-weight: bold;
   text-shadow: 0.5px 0.5px 1px black;
-  font-family: 'Monserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #myTitle {
@@ -30,14 +34,9 @@ body {
   text-align: center;
   margin-bottom: 50px;
   color: lightgrey;
-  font-weight: bold;
-  font-family: 'Monserrat', sans-serif;
+  /*font-weight: bold;*/
+  font-family: 'Montserrat', sans-serif;
   text-shadow: 0.5px 0.5px 1px black;
-}
-
-#myInfo {
-  line-height: 25px;
-  font-size: 18px;
 }
 
 #name {
@@ -57,24 +56,167 @@ body {
 }
 
 #aboutSection {
-  height: 100vh;
+  /*height: 100vh;*/
   background-color: lightgrey;
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 #projectsSection {
-  height: 100vh;
+  /*height: 100vh;*/
   background-color: salmon;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 #contactSection {
-  height: 100vh;
+  /*height: 100vh;*/
   background-color: lightgrey;
+  padding-top: 50px;
+  padding-bottom: 300px;
+}
+
+#skillsSection {
+  text-align: center;
 }
 
 .content {
-  padding-left: 33%;
-  padding-right: 33%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
-/*  */
+i {
+  font-size: 90px;
+  margin: .25em;
+}
+
+.sectionHeader {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#infoHeader {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#myInfo {
+  /*line-height: 30px;*/
+  font-size: 20px;
+  /* letter-spacing: 0.4px;*/
+  margin-bottom: 150px;
+}
+
+#iconRow1 {
+  margin-bottom: 20px;
+}
+
+/*#iconRow2 {
+  margin-bottom: 100px;
+}*/
+
+
+.img-caption {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  color: white;
+  display: none;
+  padding: 10px;
+}
+
+.img-thumb {
+  position: relative;
+  background-color: black;
+}
+
+.project {
+  padding: 10px;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+}
+
+.link {
+  height: 100%;
+  text-align: center;
+}
+
+.projectPreview {
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  height: 280px;
+}
+
+.screenshot {
+  display: block;
+  height: 100%;
+}
+
+.projectTitle {
+  margin-bottom: 50px;
+}
+
+.projectSummary {
+  font-size: 18px;
+}
+
+.projectRow {
+  margin-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.links a {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.links a:hover {
+  color: lightgrey;
+  border-color: lightgrey;
+  text-decoration: none;
+}
+
+.linkArea {
+  height: 50px;
+}
+
+.links {
+  margin-top: 50px;
+}
+
+#myContact {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#contactIcons {
+  text-align: center;
+}
+
+#contactIcons a {
+  color: black;
+}
+
+#contactIcons a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.fa-border {
+  border: solid 0.05em black;
+}
