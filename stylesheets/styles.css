@@ -22,7 +22,7 @@ body {
   margin-bottom: 0px;
   text-align: center;
   margin-top: 40vh;
-  color: lightgrey;
+  color: white;
   font-weight: bold;
   text-shadow: 0.5px 0.5px 1px black;
   font-family: 'Montserrat', sans-serif;
@@ -33,7 +33,7 @@ body {
   margin-top: 5px;
   text-align: center;
   margin-bottom: 50px;
-  color: lightgrey;
+  color: white;
   /*font-weight: bold;*/
   font-family: 'Montserrat', sans-serif;
   text-shadow: 0.5px 0.5px 1px black;
@@ -73,7 +73,7 @@ body {
   /*height: 100vh;*/
   background-color: lightgrey;
   padding-top: 50px;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
 }
 
 #skillsSection {

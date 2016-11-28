@@ -61,7 +61,7 @@ $(window).bind('scroll', function () {
 
 $(".projectPreview").hover(function() {
       $(this).find(".img-caption").fadeIn();
-      $(this).find('img').fadeTo(400, 0.5);
+      $(this).find('img').fadeTo(400, 0.4);
     }, function() {
       $(this).find(".img-caption").fadeOut();
       $(this).find('img').fadeTo(400, 1);
