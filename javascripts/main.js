@@ -12,7 +12,7 @@ $('nav a').on('click', function(e) {
   if (targetID == "aboutSection") {
     if ($(window).scrollTop() > $('#aboutSection').offset().top) {
       $('body').animate({
-        scrollTop: $('#' + targetID).position().top - 50
+        scrollTop: $('#' + targetID).position().top + .01
       }, 500)
     }
     else
